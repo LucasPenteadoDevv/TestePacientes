@@ -1,0 +1,129 @@
+:root {
+  --bg: #f7fafc;
+  --card: #fff;
+  --primary: #0366d6;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  margin: 0;
+  padding: 24px;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #e6e9ee;
+  border-radius: 8px;
+}
+
+input[type="file"] {
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(3, 102, 214, 0.12);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.patients {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.patient {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #eef2f7;
+  background: #fbfdff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient .meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  width: 420px;
+  max-width: calc(100% - 32px);
+}
+
+.hidden {
+  display: none;
+}
+
+.file-list {
+  margin-top: 8px;
+  font-size: 13px;
+}
